@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(150, 150, 255);
+}
+
+.container{
+    width: 25vw;
+    height: 70vh;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.clock{
+    width: 20vw;
+    height: 20vw;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.clock .background img{
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+}
+
+.hands{
+
+}
+
+.second-hand{
+    width: 1px;
+    height: 5px;
+    border-right: 7vw solid black;
+    background-color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;;
+    transform: translate(0, -50%);
+    rotate: -90deg;
+}
+
+
+.inputs{
+    margin-top: 20px;
+}
+
+.inputs .timer-input{
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputs .timer-input input[type=number]{
+    /* margin-top: 30px; */
+    width: 10vw;
+    /* margin-left: calc((25vw - 20vw)/2); */
+}
+
+
+
+.inputs .timer-input input[type=submit]{
+    padding: 5px;
+    background-color: rgb(70, 70, 255);
+    border: none;
+    width: 7vw;
+    height: 5vh;
+    outline: none;
+    transition: 0.1s ease-in-out;
+    font-size: 18px;
+}
+
+.inputs .timer-input input[type=submit]:hover{
+    scale: 1.2;
+    box-shadow: 3px 3px 6px 2px #666;
+}
+
+.inputs .buttons{
+    width: 20vw;
+    height: 5vh;
+    margin-top: 30px;
+    margin-left: calc((25vw - 20vw) / 2);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.start{
+    background-color: rgb(70, 255, 100);
+}
+.pause{
+    background-color: rgb(255, 70, 70);
+}
+
+.buttons button{
+    width: 7vw;
+    height: 4vh;
+    border: none;
+    outline: none;
+    transition: 0.1s ease-in-out;
+    font-size: 18px;
+}
+
+.buttons button:hover{
+    scale: 1.2;
+    box-shadow: 3px 3px 6px 2px #666;
+
+}
+
+
+#circle1{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(#dfef12, orangered);
+	clip-path: circle(20% at 30% 25%);
+	z-index: -10;
+}
+
+#circle2{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to bottom, gold 40%, mediumspringgreen);
+	clip-path: circle(20% at 70% 80%);
+	z-index: -10;
+}
